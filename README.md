@@ -2,11 +2,9 @@ Dưới đây là nội dung chi tiết cho file **`README.md`**, được đị
 
 # From Microstructure to Macro-Alignment: Exogenous Context, Cross-Fold Consensus, and Leak-Free Directional Modeling in Emerging Equities
 
-```
-!Python 3.10+
-!License: MIT
-!Framework: Scikit--Learn / XGBoost / Optuna
-```
+[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Framework: Scikit--Learn / XGBoost / Optuna](https://img.shields.io/badge/Framework-Quant--ML-orange.svg)](https://xgboost.readthedocs.io/)
 
 ---
 
@@ -14,15 +12,15 @@ Dưới đây là nội dung chi tiết cho file **`README.md`**, được đị
 
 Dự án này đánh dấu **Phase III** (Giai đoạn hoàn thiện pipeline dự báo hướng giá) trong chuỗi nghiên cứu có hệ thống về mô hình hóa chuỗi thời gian tài chính trên thị trường chứng khoán mới nổi (Emerging/Frontier Market - điển hình là HOSE, Việt Nam):
 
-1. **Phase I: Quant-ML-Microstructure**
-    - Thiết lập nền tảng toán học cho cấu trúc vi mô sổ lệnh nội phiên (L2 Limit Order Book), trích xuất các động lực học luồng lệnh thực tế: Order Flow Imbalance (OFI), Volume-Synchronized Probability of Toxicity (VPIN), và Micro-Price Dynamics.
-2. **Phase II: Context-Aware-Quant-Feature-Engineering**
-    - Mở rộng không gian trạng thái từ vi cấu trúc sang chuỗi động lực học kinh tế lượng đa quy mô: Fractional Differentiation ($d^*$), kiểm định bước nhảy Barndorff-Nielsen & Shephard Bipower Variation, Permutation Entropy (độ hỗn loạn vi mô), và phát hiện chế độ ngầm định (GMM / Markov Switching).
-3. **Phase III (Repo này): Exogenous Alignment, Feature Consensus & Leak-Free Directional Inference**
-    - Hợp nhất động lực học nội sinh (Endogenous) với bối cảnh thị trường vĩ mô ngoại sinh (Exogenous VN-Index Benchmark).
-    - Chuẩn hóa phễu tinh lọc đặc trưng 4 cấp độ (Linear VIF, Non-linear HRP Spearman, Dual Granger/Transfer Entropy causality, và Directional Consensus Anchoring).
-    - Triển khai quy trình kiểm định nghiêm ngặt chống rò rỉ thông tin (Leak-free Purged Nested Time-Series CV) kết hợp cân bằng trọng số mẫu nghịch đảo và tối ưu ngưỡng biên đối xứng qua mốc 0 (Zero-Anchored Symmetric Percentile Margin).
-    - Kiểm nghiệm thực tế qua mô phỏng khớp lệnh trễ $T+1$ Mark-to-Market và chỉ ra **"Nghịch lý ma sát" (The Friction Paradox)**, đặt nền móng lý thuyết cho cấu trúc Meta-Labeling hai tầng.
+1. **Phase I: [Quant-ML-Microstructure](https://github.com/LamTong21/Quant-ML-Microstructure)**  
+   * Thiết lập nền tảng toán học cho cấu trúc vi mô sổ lệnh nội phiên (L2 Limit Order Book), trích xuất các động lực học luồng lệnh thực tế: Order Flow Imbalance (OFI), Volume-Synchronized Probability of Toxicity (VPIN), và Micro-Price Dynamics.
+2. **Phase II: [Context-Aware-Quant-Feature-Engineering](https://github.com/LamTong21/Context-Aware-Quant-Feature-Engineering)**  
+   * Mở rộng không gian trạng thái từ vi cấu trúc sang chuỗi động lực học kinh tế lượng đa quy mô: Fractional Differentiation ($d^*$), kiểm định bước nhảy Barndorff-Nielsen & Shephard Bipower Variation, Permutation Entropy (độ hỗn loạn vi mô), và phát hiện chế độ ngầm định (GMM / Markov Switching).
+3. **Phase III (Repo này): Exogenous Alignment, Feature Consensus & Leak-Free Directional Inference**  
+   * Hợp nhất động lực học nội sinh (Endogenous) với bối cảnh thị trường vĩ mô ngoại sinh (Exogenous VN-Index Benchmark).
+   * Chuẩn hóa phễu tinh lọc đặc trưng 4 cấp độ (Linear VIF, Non-linear HRP Spearman, Dual Granger/Transfer Entropy causality, và Directional Consensus Anchoring).
+   * Triển khai quy trình kiểm định nghiêm ngặt chống rò rỉ thông tin (Leak-free Purged Nested Time-Series CV) kết hợp cân bằng trọng số mẫu nghịch đảo và tối ưu ngưỡng biên đối xứng qua mốc 0 (Zero-Anchored Symmetric Percentile Margin).
+   * Kiểm nghiệm thực tế qua mô phỏng khớp lệnh trễ $T+1$ Mark-to-Market và chỉ ra **"Nghịch lý ma sát" (The Friction Paradox)**, đặt nền móng lý thuyết cho cấu trúc Meta-Labeling hai tầng.
 
 ---
 
