@@ -1,5 +1,3 @@
-Dưới đây là nội dung chi tiết cho file **`README.md`**, được định hình liền mạch theo chuỗi nghiên cứu 3 giai đoạn (Three-Phase Quantitative Trajectory) tiếp nối 2 repo trước của bạn (`Quant-ML-Microstructure` và `Context-Aware-Quant-Feature-Engineering`), thể hiện đúng văn phong học thuật và kỹ thuật định lượng:
-
 # From Microstructure to Macro-Alignment: Exogenous Context, Cross-Fold Consensus, and Leak-Free Directional Modeling in Emerging Equities
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/)
