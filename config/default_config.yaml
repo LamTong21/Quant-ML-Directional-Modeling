@@ -1,0 +1,45 @@
+data:
+  symbol: "DIG"
+  benchmark_symbol: "VNINDEX"
+  start_date: "2018-01-01"
+  end_date: "2026-06-01"
+  source: "KBS"
+  raw_path: "data/raw/df_raw.csv"
+  processed_path: "data/processed/df_final.csv"
+
+labeling:
+  horizon: 5
+  profit_taking_multiplier: 1.0
+  stop_loss_multiplier: 1.0
+  volatility_span: 20
+
+feature_selection:
+  vif_threshold: 6.0
+  pairwise_corr_threshold: 0.85
+  max_hrp_clusters: 14
+  granger_max_lag: 5
+  granger_p_value: 0.05
+  mi_threshold: 0.01
+  min_features: 6
+  max_features: 16
+
+validation:
+  outer_splits: 5
+  inner_splits: 3
+  max_train_size: 750
+  buffer_days: 60
+  purge_gap: 5
+
+optimization:
+  n_trials: 12
+  timeout: 120
+  class_weight: "balanced"
+
+thresholding:
+  min_margin: 0.04
+
+simulation:
+  initial_capital: 100000.0
+  base_fee_bps: 15.0
+  slippage_bps: 5.0
+  target_annual_vol: 0.15
